@@ -1,19 +1,98 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+<html lang="pt-BR">
 
-  <body>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-  </body>
+  <!--Import styles.css-->
+  <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="orange darken-2">
+    <div class="nav-wrapper" id="navbar">
+      <a href="#index.html" class="brand-logo">Poké-Agenda</a>
+  </nav>
+
+  <!-- Banner -->
+  <div class="section no-pad-bot orange lighten-5" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h2 class="header center  orange-text text-darken-3">Bem-vindo treinador Pokemon!</h2>
+      <div class="row center">
+        <h5 class="header col s12 light">Use a Poké-Agenda para encontrar o seu Pokemon.</h5>
+        <br><br>
+      </div>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="row" id="conteudo">
+      <div class="container " id="pokemon-imagem">
+        <div>
+          <div class="row">
+            <div class="col s11 offset-s1 m4 offset-m1">
+              <div class="card">
+                <div class="card-image">
+                  <img id="pokeImage" src="https://pokeres.bastionbot.org/images/pokemon/644.png">
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 center-align" id="atributos">
+              <h4 id="nomePokemon">ZEKROM</h4>
+              <h5 id="listaTipos" class="black-text">dragon, electric</h5>
+              <ul id="listaHabilidades">
+                <p>teravolt</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de busca -->
+        <div class="row">
+          <div class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" id="autocomplete-input" class="autocomplete"
+                  data-target="autocomplete-options-e0291e42-6247-d484-2b9d-988931b8f0a2">
+                <ul id="autocomplete-options-e0291e42-6247-d484-2b9d-988931b8f0a2"
+                  class="autocomplete-content dropdown-content" tabindex="0"></ul>
+                <label for="autocomplete-input" class="center-align">ID OU NOME POKÉMON</label>
+              </div>
+              <div class="center-align">
+                <button class="btn-large waves-effect waves-light orange darken-3" onclick="apertaBotao()">BUSCAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <!-- Footer -->
+    <div class="container-fluid" id="footer">
+    <footer class="orange darken-3 white-text  center-align ">
+      <p><i> Desenvolvido por Hugo Felipe Amanajás Gama durante o Desafio Pokemon (Pokedex e Análises) na Arbyte</i>
+    </footer>
+  </div>
+    
+  </div>
+  <!--  Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src=" js/index.js"></script>
+</body>
+
 </html>
-      

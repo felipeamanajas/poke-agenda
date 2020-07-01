@@ -1,0 +1,24 @@
+.brand-logo {
+  margin-left: 2%;
+}
+
+.card-image{
+  margin: center;
+  float: left;
+  width: calc(100% - 1rem);
+  margin-right: 3rem;
+  background-color: transparent;
+}
+
+#atributos {
+  margin-top: 1%;
+}
+
+#pokemon-imagem{
+ width: 50%;
+}
+
+.footer {
+  margin-top: 1%;
+}
+
